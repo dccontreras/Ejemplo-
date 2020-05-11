@@ -51,6 +51,7 @@ dt[which.min(dt$price),c("neighbourhood","latitude","longitude","room_type","min
 # tengan cuarto privado y permita quedarte minimo una noche.
 nueva<-0
 if (dt$neighbourhood=="Harlem" && dt$number_of_reviews>0 && dt$room_type=="Private Room" && dt$minimum_nights>=1){dt$nueva<-1}else dt$nueva<-0 
+sum(dt$neigbourhood)
 # 12.Existen valores extremos en el precio (use boxplots).
 
 # 13.Por que el analisis anterior no es correcto? Identifique formas
